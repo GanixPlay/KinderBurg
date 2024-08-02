@@ -6,15 +6,25 @@
     <title>Киндербург</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-hover-full.min.js"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navId">
 <div class="container">
     <!-- Главная -->
     <h1 class="text-center mt-5 mb-2" id="scrollspyHeading1">ГЛАВНАЯ</h1>
 
-    <video loop autoplay muted>
-        <source src="{{ url_for('static', filename='main_video.mp4') }}" type="video/mp4"/>
-    </video>
+
+
+    <div class="ratio ratio-16x9">
+        <video loop autoplay muted>
+            <source src="{{ url_for('static', filename='main_video.mp4') }}" type="video/mp4"/>
+        </video>
+    </div>
+
+
+
 
     <!-- Начало навбара -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-2" id="navId">
@@ -26,7 +36,7 @@
         <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
              aria-labelledby="navbarOffcanvasLgLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
             </div>
             <div class="offcanvas-body">
@@ -44,9 +54,6 @@
                         <a class="nav-link" href="#scrollspyHeading3">Вакансии</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyHeadingDocs">Документы</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#scrollspyHeading5">Обучение</a>
                     </li>
                     <li class="nav-item">
@@ -58,7 +65,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#scrollspyHeading8">Контакты</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Сведения
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#info">Основыне сведения</a></li>
+                            <li><a class="dropdown-item" href="#sno">Структура и органы управления <br> образовательной
+                                организацией</a></li>
+                            <li><a class="dropdown-item" href="#scrollspyHeadingDocs">Документы</a></li>
+                            <li><a class="dropdown-item" href="#teach">Образование</a></li>
+                        </ul>
+                    </li>
                 </ul>
+            <img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
             </div>
         </div>
 
@@ -74,9 +95,6 @@
             <div class="card-body">
                 <p class="card-text"><strong>Ким Евгений Васильевич</strong></p>
                 <p class="card-text">Руководитель</p>
-                <p class="card-text">И.о.руководителя Регионального сосудистого центра<br>
-                    Депутат Думы Великого Новгород
-                </p>
             </div>
         </div>
 
@@ -372,16 +390,12 @@
     </div>
     <!-- Конец аккордеон -->
 
-    <!-- Документы -->
-    <h1 class="text-center mt-5 mb-2" id="scrollspyHeadingDocs">ДОКУМЕНТЫ</h1>
-
-    <p>Договоры оферты</p>
 
 
     <!-- Обучение -->
     <h1 class="text-center mt-5 mb-2" id="scrollspyHeading5">ОБУЧЕНИЕ</h1>
     <div class="d-flex align-items-center flex-column">
-        <div class="card mb-3 mx-3" style="width: 1200px;">
+        <div class="card mb-3 mx-3" style="width: 100%;">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="static/erly.jpg" class="img-fluid rounded-start" alt="...">
@@ -390,6 +404,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Раннее развитие</h5>
                         <p class="card-text">1 раз в неделю, 1,5 часа</p>
+                        <p class="card-text"><u>Абонемент: 2700 руб.</u></p>
                         <p class="card-text">
                         <ul>
                             <li>Социальное развитие: ознакомление с окружающим миром, освоение бытовых навыков,
@@ -411,12 +426,13 @@
             </div>
         </div>
         <br>
-        <div class="card mb-3 mx-3" style="width: 1200px;">
+        <div class="card mb-3 mx-3" style="width: 100%;">
             <div class="row g-0">
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">Базовый интеллектуальный курс</h5>
                         <p class="card-text">2 раза в неделю</p>
+                        <p class="card-text"><u>Абонемент: 3700 руб.</u></p>
                         <p class="card-text">
                         <ul>
                             <li>Знакомство с числами, звуками и буквами, слогами – развитие речи</li>
@@ -445,7 +461,7 @@
             </div>
         </div>
 
-        <div class="card mb-3 mx-3" style="width: 1200px;">
+        <div class="card mb-3 mx-3" style="width: 100%;">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="static/school.jpg" class="img-fluid rounded-start" alt="...">
@@ -454,6 +470,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Подготовка к школе</h5>
                         <p class="card-text">2 раза в неделю</p>
+                        <p class="card-text"><u>Абонемент: 3700 руб.</u></p>
                         <p class="card-text">
                         <ul>
                             <li>Изучение букв, постановка руки для письма, изучение звуков</li>
@@ -477,12 +494,17 @@
             </div>
         </div>
         <br>
-        <div class="card mb-3 mx-3" style="width: 1200px;">
+        <div class="card mb-3 mx-3" style="width: 100%;">
             <div class="row g-0">
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">Логопед</h5>
                         <p class="card-text">по индивидуальному графику</p>
+                        <p class="card-text"><u>Диагностика: 800 руб.</u>
+                            <br>
+                            <u>Абонемент на 4 занятия: 2400 руб.</u>
+                            <br>
+                            <u>Абонемент на 8 занятия: 4200 руб.</u></p>
                         <p class="card-text">
                         <ul>
                             <li>Первичная диагностика ребенка – определение проблемы, составление индивидуального плана
@@ -504,7 +526,7 @@
             </div>
         </div>
         <br>
-        <div class="card mb-3 mx-3" style="width: 1200px;">
+        <div class="card mb-3 mx-3" style="width: 100%;">
             <div class="row g-0">
                 <div class="col-md-4">
                     <img src="static/proger.jpg" class="img-fluid rounded-start" alt="...">
@@ -513,6 +535,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Программирование</h5>
                         <p class="card-text">1 раз в неделю</p>
+                        <p class="card-text"><u>Абонемент: 2700 руб.</u><br><u>Индивидуальное занятие: 1500 руб.</u></p>
                         <p class="card-text">
                         <ul>
                             <li>Освоение базовых навыков работы с компьютером</li>
@@ -535,30 +558,30 @@
 
     <div class="d-flex justify-content-center flex-wrap">
         <p>Прошла летняя IT смена – две недели продуктивных занятий, крутых мастер-классов и интересных мероприятий</p>
-<!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
-<!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
-<!--            <div class="card-body">-->
-<!--                <p class="card-text">Содержание новости</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
-<!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
-<!--            <div class="card-body">-->
-<!--                <p class="card-text">Содержание новости</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
-<!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
-<!--            <div class="card-body">-->
-<!--                <p class="card-text">Содержание новости</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
-<!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
-<!--            <div class="card-body">-->
-<!--                <p class="card-text">Содержание новости</p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
+        <!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
+        <!--            <div class="card-body">-->
+        <!--                <p class="card-text">Содержание новости</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
+        <!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
+        <!--            <div class="card-body">-->
+        <!--                <p class="card-text">Содержание новости</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
+        <!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
+        <!--            <div class="card-body">-->
+        <!--                <p class="card-text">Содержание новости</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
+        <!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
+        <!--            <div class="card-body">-->
+        <!--                <p class="card-text">Содержание новости</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
     </div>
 
     <!-- Отзывы -->
@@ -670,6 +693,88 @@
         <p>Телефон: +7-921-200-12-00<br>+7-960-200-40-77</p>
         <p>Соцсети: <a href="https://vk.com/kinder__burg">ВКонтакте</a></p>
     </div>
+
+
+    <!-- Сведения -->
+
+    <!-- Основные сведения -->
+    <h1 class="text-center mt-5 mb-2">СВЕДЕНИЯ</h1>
+
+
+    <h2 class="text-center mt-5 mb-2" id="info">ОСНОВНЫЕ СВЕДЕНИЯ</h2>
+
+    <div class="container">
+        <p><b>Полное наименование организации:</b> Центр развития интеллекта KinderBurg</p>
+        <p><b>Краткое наименование организации:</b> ЦДО KinderBurg</p>
+        <p><b>Дата создания организации:</b></p>
+        <p><b>Почтовый и юридический адрес МДОУ детский сад № 14:</b> 173008, Новгородская область, г. Великий Новгород,
+            ул. Щусева д. 7А</p>
+        <p><b>Информация об учредителя:</b> Учредителем ЦДО KinderBurg является ИП Ким Евгений Васильевич, действующий
+            на основании регистрации физического лица в качестве индивидуального предпринимателя ОГРНИП 321532100019631
+            от 18 августа 2021 г., ИНН 532120531391</p>
+        <p><b>Адрес:</b> 173021, обл. Новгородская, г. Великий Новгород, ул. Ломоносова, д. 37, кв. 101</p>
+        <p><b>Электронная почта:</b> kinderburg.vn@yandex.ru</p>
+        <p><b>Режим работы:</b></p>
+        <ul>
+            <li>Шестидневная рабочая неделя;</li>
+            <li>Выходные дни - воскресенье, праздничные дни;</li>
+            <li>График работы: с 10:00 до 21:00;</li>
+        </ul>
+        <p><b>Контактный телефон:</b> +7-921-200-12-00</p>
+        <p><b>Адрес страницы в сети Интернет:</b> https://vk.com/kinder__burg</p>
+        <p><b>Филиалов и структурных подразделений нет.</b></p>
+        <p>ЦДО KinderBurg представляет собой кирпичное двухэтажное здание, рассчитанное на 4 группы обучающихся по
+            направлениям: раннее развитие, базовый интеллектуальный курс, подготовка к школе, программирование,
+            логопедическая работа.
+            Две группы, расположенные на первом этаже имеют необходимое оборудование, на первом этаже расположен
+            гардероб, две туалетные комнаты: детская и взрослая. Группы, расположенные на втором этаже имеют зонирование
+            с игровой комнатой для отдыха, логопедический кабинет представляет собой отдельное помещение для
+            индивидуальных занятий.
+            В здании ЦДО имеются: кабинет логопеда-дефектолога, музыкальный зал, 4 учебных кабинета, гардероб, 2
+            туалетные комнаты, кабинет изобразительного искусства, 2 подсобных помещения.
+        </p>
+        <p><b>Обучение осуществляется на государственном языке Российской Федерации - русском языке.</b></p>
+    </div>
+
+
+    <h2 class="text-center mt-5 mb-2" id="sno">СТРУКТУРА И ОРГАНЫ УПРАВЛЕНИЯ ОБРАЗОВАТЕЛЬНОЙ ОРГАНИЗАЦИЕЙ</h2>
+
+    <div>
+        <p><b>Министерство образования Новгородской области</b></p>
+        <p>173001, Великий Новгород, ул.Новолучанская, д.27.</p>
+        <p>Сайт: минобр.тверскаяобласть.рф</p>
+        <p>В социальной сети "ВКонтакте": https://vk.com/minobr53</p>
+        <p>Управление Учреждением осуществляется в соответствии с законодательством Российской Федерации и Уставом.
+            Учредителем и собственником имущества Учреждения является руководитель – ИП Ким Евгений Васильевич, который
+            осуществляет текущее руководство деятельностью образовательной организации.</p>
+    </div>
+
+
+    <h2 class="text-center mt-5 mb-2" id="scrollspyHeadingDocs">ДОКУМЕНТЫ</h2>
+
+    <div>
+        <a href="static/file1.pdf">Выписка_из_реестра_лицензий_L035_01280_53_00617169_1.pdf</a><br>
+        <a href="static/file2.pdf">ДОГОВОР_присоединения_на_оказание_услуг_Программирование,_11_09.pdf</a><br>
+        <a href="static/file3.pdf">ДОГОВОР_присоединения_на_оказание_услуг_Экспресс_курс,_5_7_лет,.pdf</a><br>
+        <a href="static/file4.pdf">ДОГОВОР_присоединения_на_оказание_услуг_1_2_года,_11_09_23.pdf</a><br>
+        <a href="static/file5.pdf">ДОГОВОР_присоединения_на_оказание_услуг_3_4_года_и_5_7_лет,_11_09.pdf</a><br>
+        <a href="static/file6.pdf">Порядок_приема,_отчисления_и_восстановления_учащегося.pdf</a><br>
+    </div>
+
+
+    <h2 class="text-center mt-5 mb-2" id="teach">ОБРАЗОВАНИЕ</h2>
+
+    <div class="mb-5">
+        <p>Обучение по программам дополнительного образования. Уровень образования – дошкольное, форма – очная,
+            нормативный
+            срок обучения – 2 года по каждой программе, язык обучения – русский.</p>
+
+        <p>Обучение организуется в соответствии с утвержденными образовательными стандартами: </p>
+        <a href="static/file7.pdf">Федеральный_закон_Российской_Федерации_от_29_декабря_2012_г_N_273.pdf</a><br>
+        <a href="static/file8.pdf">Приказ_от_17_10_2013_№_1155_Об_утверждении_федерального_государственного.pdf</a><br>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
