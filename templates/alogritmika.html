@@ -1,783 +1,1489 @@
 <!doctype html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Киндербург</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+
+
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
-<script src="https://lidrekon.ru/slep/js/uhpv-hover-full.min.js"></script>
+
+    <script src="https://lidrekon.ru/slep/js/uhpv-hover-full.min.js"></script>
+
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#navId">
+
 <div class="container">
+
     <!-- Главная -->
+
     <h1 class="text-center mt-5 mb-2" id="scrollspyHeading1">ГЛАВНАЯ</h1>
 
 
 
+
+
     <div class="ratio ratio-16x9">
+
         <video loop autoplay muted>
+
             <source src="{{ url_for('static', filename='main_video.mp4') }}" type="video/mp4"/>
+
         </video>
+
     </div>
+
 
 
 
 
     <!-- Начало навбара -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top px-2" id="navId">
+
         <a class="navbar-brand" href="/">Киндербург</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+
                 aria-controls="navbarOffcanvasLg">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
+
         <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+
              aria-labelledby="navbarOffcanvasLgLabel">
+
             <div class="offcanvas-header">
+
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+
             </div>
+
             <div class="offcanvas-body">
+
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+
                     <li class="nav-item">
+
                         <a class="nav-link active" aria-current="page" href="#scrollspyHeading1">Главная</a>
+
                     </li>
+
                     <li class="nav-item">
+
                         <a class="nav-link" href="#scrollspyHeadingComand">Команда</a>
+
                     </li>
+
                     <li class="nav-item">
+
                         <a class="nav-link" href="#scrollspyHeading2">Галерея</a>
+
                     </li>
+
                     <li class="nav-item">
+
                         <a class="nav-link" href="#scrollspyHeading3">Вакансии</a>
+
                     </li>
+
                     <li class="nav-item">
+
                         <a class="nav-link" href="#scrollspyHeading5">Обучение</a>
+
                     </li>
+
                     <li class="nav-item">
+
                         <a class="nav-link" href="#scrollspyHeading6">Новости</a>
+
                     </li>
+
                     <li class="nav-item">
+
                         <a class="nav-link" href="#scrollspyHeading7">Отзывы</a>
+
                     </li>
+
                     <li class="nav-item">
+
                         <a class="nav-link" href="#scrollspyHeading8">Контакты</a>
+
                     </li>
+
                     <li class="nav-item dropdown">
+
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+
                            aria-expanded="false">
+
                             Сведения
+
                         </a>
+
                         <ul class="dropdown-menu">
+
                             <li><a class="dropdown-item" href="#info">Основыне сведения</a></li>
+
                             <li><a class="dropdown-item" href="#sno">Структура и органы управления <br> образовательной
+
                                 организацией</a></li>
+
                             <li><a class="dropdown-item" href="#scrollspyHeadingDocs">Документы</a></li>
+
                             <li><a class="dropdown-item" href="#teach">Образование</a></li>
+
                         </ul>
+
                     </li>
+
                 </ul>
-            <img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
+
+                <img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png"
+
+                     alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ"/>
+
             </div>
+
         </div>
 
+
+
     </nav>
+
     <!-- Конец навбара -->
+
     <br>
+
+
 
     <h1 class="text-center" id="scrollspyHeadingComand">КОМАНДА</h1>
 
+
+
     <div class="d-flex justify-content-center flex-wrap">
-        <div class="card m-5" style="width: 18rem;">
-            <img src="static/kim.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text"><strong>Ким Евгений Васильевич</strong></p>
-                <p class="card-text">Руководитель</p>
-            </div>
-        </div>
+
+
 
         <div class="card m-5" style="width: 18rem;">
+
             <img src="static/drob.jpg" class="card-img-top" alt="...">
+
             <div class="card-body">
+
                 <p class="card-text"><strong>Дробышева Екатерина Сергеевна</strong></p>
-                <p class="card-text">Управляющая</p>
+
+                <p class="card-text">Руководитель центра развития интеллекта KinderBurg</p>
+
+                <p class="card-text">Образование: Новгородский государственный университет им. Ярослава Мудрого, профиль
+
+                    «Управление в социокультурной сфере», бакалавр<br>
+
+                    Новгородский государственный университет им. Ярослава Мудрого, профиль «Идеология национальной
+
+                    безопасности»</p>
+
             </div>
+
         </div>
 
+
+
         <div class="card m-5" style="width: 18rem;">
+
             <img src="static/moch.jpg" class="card-img-top" alt="...">
+
             <div class="card-body">
+
                 <p class="card-text"><strong>Мочалова Елена Сергеевна</strong></p>
+
                 <p class="card-text">Педагог дополнительного образования</p>
+
                 <p class="card-text">Стаж – 16 лет, квалифицированный педагог высшей категории, дважды обладательница
+
                     награды "Воспитатель года"<br>
+
                     Преподаваемые курсы: подготовка к школе 5+, 6+
 
+
+
                 </p>
+
             </div>
+
         </div>
 
+
+
         <div class="card m-5" style="width: 18rem;">
+
             <img src="static/kuz.jpg" class="card-img-top" alt="...">
+
             <div class="card-body">
+
                 <p class="card-text"><strong>Кузнецова Мария Николаевна</strong></p>
+
                 <p class="card-text">Педагог дополнительного образования, специалист по раннему развитию</p>
+
                 <p class="card-text">Стаж – 14 лет, дипломированный педагог, владеет методиками работы с детьми от 9
+
                     месяцев, имеет собственные разработанные образовательные программы и методики: «Логоритмика»,
+
                     методика музыкально-логопедического развития ребенка, разработанная совместно с
+
                     логопедом-дефектологом
+
                 </p>
+
             </div>
+
         </div>
 
+
+
         <div class="card m-5" style="width: 18rem;">
+
             <img src="static/shub.jpg" class="card-img-top" alt="...">
+
             <div class="card-body">
+
                 <p class="card-text"><strong>Шубина Марина Владимировна</strong></p>
+
                 <p class="card-text">Педагог дополнительного образования, специалист по работе с инклюзией</p>
+
                 <p class="card-text">Стаж – 14 лет, дипломированный педагог, имеет собственную образовательную программу
+
                     программы по театральному искусству и творчеству, опыт работы в коррекционном саду и награды в
+
                     конкурсе "Ментор 2022" в номинации "За успешное обучение альтернативной коммуникации детей с РАС"
+
                 </p>
+
             </div>
+
         </div>
 
+
+
         <div class="card m-5" style="width: 18rem;">
+
             <img src="static/bah.jpg" class="card-img-top" alt="...">
+
             <div class="card-body">
+
                 <p class="card-text"><strong>Бахтина Олеся Юрьевна</strong></p>
+
                 <p class="card-text">Педагог дополнительного образования</p>
+
                 <p class="card-text">Стаж – 14 лет, дипломированный педагог, опыт работы по различным программам
+
                     дополнительного образования, использование интерактивных методик в обучении
+
                 </p>
+
             </div>
+
         </div>
 
-        <div class="card m-5" style="width: 18rem;">
-            <img src="static/pet.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text"><strong>Петушкевич Евгения Геннадьевна</strong></p>
-                <p class="card-text">Логопед-дефектолог</p>
-                <p class="card-text">Стаж – 13 лет, дипломированный специалист с высшим образованием, имеет квалификацию
-                    для работы с различными категориями детей с ОВЗ
-                </p>
-            </div>
-        </div>
+
+
+
 
         <div class="card m-5" style="width: 18rem;">
+
             <img src="static/yan.jpg" class="card-img-top" alt="...">
+
             <div class="card-body">
+
                 <p class="card-text"><strong>Савельев Ян Вячеславович</strong></p>
+
                 <p class="card-text">Педагог дополнительного образования, педагог по программированию, программист</p>
+
                 <p class="card-text">Стаж – более 5 лет, высшее образование по направлениям: Педагогика дополнительного
+
                     образования для детей и взрослых и Радиотехника, организатор областных хакатонов по
+
                     программированию, наставник IT-лагерей во Владивостоке, Севастополе и Великом Новгороде
+
                 </p>
+
             </div>
+
         </div>
 
+
+
         <div class="card m-5" style="width: 18rem;">
+
             <img src="static/shus.jpg" class="card-img-top" alt="...">
+
             <div class="card-body">
+
                 <p class="card-text"><strong>Шустров Андрей Сергеевич</strong></p>
+
                 <p class="card-text">Педагог дополнительного образования, педагог по программированию, программист</p>
+
                 <p class="card-text">Стаж – более 5 лет, действующий Новгородского государственного университета им.
+
                     Ярослава Мудрого по направлениям технологического и художественного образования и современных языков
+
                     программирования, победитель конкурса «Молодой ученый», имеет более 11-ти научных публикаций,
+
                     проходил стажировку в Германии
+
                 </p>
+
             </div>
+
         </div>
 
-        <div class="card m-5" style="width: 18rem;">
-            <img src="static/ryab.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text"><strong>Рябчиков Григорий Максимович</strong></p>
-                <p class="card-text">Педагог по графическому дизайну</p>
-                <p class="card-text">Дипломированный эксперт по промышленному дизайну чемпионата World Skills Russia и
-                    участник чемпионата Art Masters по направлению «Специалист компьютерной графики»
-                </p>
-            </div>
-        </div>
 
-        <div class="card m-5" style="width: 18rem;">
-            <img src="static/kis.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text"><strong>Киселева Александра Игоревна</strong></p>
-                <p class="card-text">Тренер по пилатесу и растяжке</p>
-                <p class="card-text">Стаж – более 3 лет, инструктор по фитнесу, инструктор групповых программ по
-                    направлениям: силовой пилатес, стретчинг, «Здоровая спина»
-                </p>
-            </div>
-        </div>
+
+
+
+
+
     </div>
+
+
+
 
 
     <!-- Начало карточек с информацией -->
+
     <!-- вариант в колонку <div class="d-flex align-items-center flex-column"> -->
+
     <!--<div class="d-flex justify-content-center flex-wrap">-->
-    <!--    <div class="card mb-3 mx-3" style="width: 540px;">-->
-    <!--        <div class="row g-0">-->
-    <!--            <div class="col-md-4">-->
-    <!--                <img src="static/empty_img.png" class="img-fluid rounded-start" alt="...">-->
-    <!--            </div>-->
-    <!--            <div class="col-md-8">-->
-    <!--                <div class="card-body">-->
-    <!--                    <h5 class="card-title">Программирование на Scratch</h5>-->
-    <!--                    <p class="card-text">Описание</p>-->
-    <!--                    <p class="card-text"><small class="text-body-secondary">до 7 лет</small>-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <br>-->
-    <!--    <div class="card mb-3 mx-3" style="width: 540px;">-->
-    <!--        <div class="row g-0">-->
-    <!--            <div class="col-md-8">-->
-    <!--                <div class="card-body">-->
-    <!--                    <h5 class="card-title">Программирование на Python</h5>-->
-    <!--                    <p class="card-text">Описание</p>-->
-    <!--                    <p class="card-text"><small class="text-body-secondary">12+</small>-->
-    <!--                    </p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="col-md-4">-->
-    <!--                <img src="static/empty_img.png" class="img-fluid rounded-end" alt="...">-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
 
     <!--    <div class="card mb-3 mx-3" style="width: 540px;">-->
+
     <!--        <div class="row g-0">-->
+
     <!--            <div class="col-md-4">-->
+
     <!--                <img src="static/empty_img.png" class="img-fluid rounded-start" alt="...">-->
+
     <!--            </div>-->
+
     <!--            <div class="col-md-8">-->
+
     <!--                <div class="card-body">-->
-    <!--                    <h5 class="card-title">Название</h5>-->
+
+    <!--                    <h5 class="card-title">Программирование на Scratch</h5>-->
+
     <!--                    <p class="card-text">Описание</p>-->
-    <!--                    <p class="card-text"><small class="text-body-secondary">Возраст</small>-->
+
+    <!--                    <p class="card-text"><small class="text-body-secondary">до 7 лет</small>-->
+
     <!--                    </p>-->
+
     <!--                </div>-->
+
     <!--            </div>-->
+
     <!--        </div>-->
+
     <!--    </div>-->
+
     <!--    <br>-->
+
     <!--    <div class="card mb-3 mx-3" style="width: 540px;">-->
+
     <!--        <div class="row g-0">-->
+
     <!--            <div class="col-md-8">-->
+
     <!--                <div class="card-body">-->
-    <!--                    <h5 class="card-title">Название</h5>-->
+
+    <!--                    <h5 class="card-title">Программирование на Python</h5>-->
+
     <!--                    <p class="card-text">Описание</p>-->
-    <!--                    <p class="card-text"><small class="text-body-secondary">Возраст</small>-->
+
+    <!--                    <p class="card-text"><small class="text-body-secondary">12+</small>-->
+
     <!--                    </p>-->
+
     <!--                </div>-->
+
     <!--            </div>-->
+
     <!--            <div class="col-md-4">-->
+
     <!--                <img src="static/empty_img.png" class="img-fluid rounded-end" alt="...">-->
+
     <!--            </div>-->
+
     <!--        </div>-->
+
     <!--    </div>-->
+
+
+
+    <!--    <div class="card mb-3 mx-3" style="width: 540px;">-->
+
+    <!--        <div class="row g-0">-->
+
+    <!--            <div class="col-md-4">-->
+
+    <!--                <img src="static/empty_img.png" class="img-fluid rounded-start" alt="...">-->
+
+    <!--            </div>-->
+
+    <!--            <div class="col-md-8">-->
+
+    <!--                <div class="card-body">-->
+
+    <!--                    <h5 class="card-title">Название</h5>-->
+
+    <!--                    <p class="card-text">Описание</p>-->
+
+    <!--                    <p class="card-text"><small class="text-body-secondary">Возраст</small>-->
+
+    <!--                    </p>-->
+
+    <!--                </div>-->
+
+    <!--            </div>-->
+
+    <!--        </div>-->
+
+    <!--    </div>-->
+
+    <!--    <br>-->
+
+    <!--    <div class="card mb-3 mx-3" style="width: 540px;">-->
+
+    <!--        <div class="row g-0">-->
+
+    <!--            <div class="col-md-8">-->
+
+    <!--                <div class="card-body">-->
+
+    <!--                    <h5 class="card-title">Название</h5>-->
+
+    <!--                    <p class="card-text">Описание</p>-->
+
+    <!--                    <p class="card-text"><small class="text-body-secondary">Возраст</small>-->
+
+    <!--                    </p>-->
+
+    <!--                </div>-->
+
+    <!--            </div>-->
+
+    <!--            <div class="col-md-4">-->
+
+    <!--                <img src="static/empty_img.png" class="img-fluid rounded-end" alt="...">-->
+
+    <!--            </div>-->
+
+    <!--        </div>-->
+
+    <!--    </div>-->
+
     <!--</div>-->
+
     <!-- Конец карточек с информацией -->
+
+
 
     <!-- Галерея -->
 
+
+
     <h1 class="text-center" id="scrollspyHeading2">ГАЛЕРЕЯ</h1>
+
     <!-- Начало карусели -->
+
     <div class="d-flex justify-content-center flex-wrap">
+
         <div id="carouselExample" class="carousel slide mx-5" data-bs-ride="carousel" style="width: 50%;">
+
             <div class="carousel-inner">
+
                 <div class="carousel-item active">
+
                     <img src="static/galery/g13.jpg" class="d-block w-100" alt="...">
+
                 </div>
+
                 {% for i in range(12) %}
+
                 <div class="carousel-item">
+
                     <img src="static/galery/g{{ loop.index }}.jpg" class="d-block w-100" alt="...">
+
                 </div>
+
                 {% endfor %}
+
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
                 <span class="visually-hidden">Предыдущий</span>
+
             </button>
+
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
                 <span class="visually-hidden">Следующий</span>
+
             </button>
+
         </div>
+
     </div>
+
     <!-- Конец карусели -->
 
+
+
     <!-- Вакансии -->
+
     <h1 class="text-center mt-5 mb-2" id="scrollspyHeading3">ВАКАНСИИ</h1>
+
     <!-- Начало аккордеон -->
+
     <div class="d-flex justify-content-center flex-wrap mb-5">
+
         <div class="accordion" id="accordionExample" style="width: 50%;">
+
             <div class="accordion-item">
+
                 <h2 class="accordion-header">
+
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
+
                             data-bs-target="#collapseOne"
+
                             aria-expanded="true" aria-controls="collapseOne">
+
                         <strong>ЛОГОПЕД-ДЕФЕКТОЛОГ</strong>
+
                     </button>
+
                 </h2>
+
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+
                     <div class="accordion-body">
+
                         ✔Обязанности:<br>
+
                         <ul>
+
                             <li>Проведение первичной диагностики</li>
+
                             <li>Индивидуальные занятия по составленному логокоррекционному плану</li>
+
                             <li>Обратная связь для родителей</li>
+
                         </ul>
+
                         ✔Требования:<br>
+
                         <ul>
+
                             <li>Высшее образование по специальности</li>
+
                             <li>Опыт работы от 2-х лет</li>
+
                             <li>Ответственность и пунктуальность</li>
+
                         </ul>
+
                         ✔Условия:<br>
+
                         <ul>
+
                             <li>Работа по согласованному графику</li>
+
                             <li>Скидки на обучение для детей сотрудников</li>
+
                         </ul>
+
                         🔔❗ Ждем Ваше резюме в сообщения группы или на почту <b>kaandreewa5@gmail.com</b> с пометкой
+
                         "ЛОГОПЕД"
 
+
+
                     </div>
+
                 </div>
+
             </div>
+
             <div class="accordion-item">
+
                 <h2 class="accordion-header">
+
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
                         <strong>АДМИНИСТРАТОР</strong>
+
                     </button>
+
                 </h2>
+
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+
                     <div class="accordion-body">
+
                         ✔Обязанности:<br>
+
                         <ul>
+
                             <li>Приём платежей (опыт работы с кассой приветствуется)</li>
+
                             <li>Общение с родителями по поводу имеющихся курсов, расписания, системы оплат и других
+
                                 организационных моментов
+
                             </li>
+
                             <li>Общение с родителями по поводу имеющихся курсов, расписания, системы оплат и других
+
                                 организационных моментов
+
                             </li>
+
                         </ul>
+
                         ✔Требования:<br>
+
                         <ul>
+
                             <li>Пунктуальность и ответственность</li>
+
                             <li>Желателен опыт работы с детьми (возможно также студенты профильной специальности)</li>
+
                         </ul>
+
                         ✔Условия:<br>
+
                         <ul>
+
                             <li>3-4 дня в неделю, смены от 2 до 7 часов в день по договоренности</li>
+
                             <li>Скидки на обучение для детей сотрудников</li>
+
                         </ul>
+
                         🔔❗ Ждем Ваше резюме в сообщения группы или на почту <b>kaandreewa5@gmail.com</b> с пометкой
+
                         "АДМИНИСТРАТОР"
 
+
+
                     </div>
+
                 </div>
+
             </div>
 
+
+
         </div>
+
     </div>
+
     <!-- Конец аккордеон -->
 
 
 
+
+
     <!-- Обучение -->
+
     <h1 class="text-center mt-5 mb-2" id="scrollspyHeading5">ОБУЧЕНИЕ</h1>
+
     <div class="d-flex align-items-center flex-column">
+
         <div class="card mb-3 mx-3" style="width: 100%;">
+
             <div class="row g-0">
+
                 <div class="col-md-4">
+
                     <img src="static/erly.jpg" class="img-fluid rounded-start" alt="...">
+
                 </div>
+
                 <div class="col-md-8">
+
                     <div class="card-body">
+
                         <h5 class="card-title">Раннее развитие</h5>
+
                         <p class="card-text">1 раз в неделю, 1,5 часа</p>
-                        <p class="card-text"><u>Абонемент: 2700 руб.</u></p>
+
+                        <p class="card-text"><u>Абонемент: 2850 руб.</u></p>
+
                         <p class="card-text">
+
                         <ul>
+
                             <li>Социальное развитие: ознакомление с окружающим миром, освоение бытовых навыков,
+
                                 формирование образцов действий с предметами
+
                             </li>
+
                             <li>Физическое развитие: крупная и мелкая моторика, нейрогимнастика, танцевальные
+
                                 упражнения, босоногохождение, профилактика плоскостопия и знакомство с разными
+
                                 текстурами
+
                             </li>
+
                             <li>Логоритмика: знакомство в игровой форме со звуками, работа над запуском и развитием
+
                                 речи
+
                             </li>
+
                         </ul>
+
                         </p>
+
                         <p class="card-text"><small class="text-body-secondary">от 1 года</small>
+
                         </p>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
         <br>
+
         <div class="card mb-3 mx-3" style="width: 100%;">
+
             <div class="row g-0">
+
                 <div class="col-md-8">
+
                     <div class="card-body">
+
                         <h5 class="card-title">Базовый интеллектуальный курс</h5>
+
                         <p class="card-text">2 раза в неделю</p>
-                        <p class="card-text"><u>Абонемент: 3700 руб.</u></p>
+
+                        <p class="card-text"><u>Абонемент: 3900 руб.</u></p>
+
                         <p class="card-text">
+
                         <ul>
+
                             <li>Знакомство с числами, звуками и буквами, слогами – развитие речи</li>
+
                             <li>Постановка руки для будущего письма</li>
+
                             <li>Расширение кругозора, командного взаимодействия</li>
+
                             <li>Формирование навыка создания множеств и закономерностей, развитие логика</li>
+
                         </ul>
+
                         </p>
+
                         <p class="card-text">
+
                             В старшей группе
+
                         <ul>
+
                             <li>Составление рассказов по картинкам, написание печатных букв и несложны слов</li>
+
                             <li>Решение примеров на сложение и вычитание в пределах десятка</li>
+
                             <li>Понятия "больше", "меньше", "столько же", "увеличить", "уменьшить"</li>
+
                             <li>Изучение фигур и их свойств</li>
 
+
+
                         </ul>
+
                         </p>
+
                         <p class="card-text"><small class="text-body-secondary">от 3 лет</small>
+
                         </p>
+
                     </div>
+
                 </div>
+
                 <div class="col-md-4">
+
                     <img src="static/base.jpg" class="img-fluid rounded-end" alt="...">
+
                 </div>
+
             </div>
+
         </div>
 
+
+
         <div class="card mb-3 mx-3" style="width: 100%;">
+
             <div class="row g-0">
+
                 <div class="col-md-4">
+
                     <img src="static/school.jpg" class="img-fluid rounded-start" alt="...">
+
                 </div>
+
                 <div class="col-md-8">
+
                     <div class="card-body">
+
                         <h5 class="card-title">Подготовка к школе</h5>
+
                         <p class="card-text">2 раза в неделю</p>
-                        <p class="card-text"><u>Абонемент: 3700 руб.</u></p>
+
+                        <p class="card-text"><u>Абонемент: 3900 руб.</u></p>
+
                         <p class="card-text">
+
                         <ul>
+
                             <li>Изучение букв, постановка руки для письма, изучение звуков</li>
+
                             <li>Запуск процесса чтения и письма</li>
+
                             <li>Математический блок: изучение чисел и состава числа, геометрические фигуры, формирование
+
                                 навыков устного и письменного счета, решение задач, развитие графических навыков
+
                                 написания цифр
+
                             </li>
+
                             <li>Формирование временных представлений</li>
+
                             <li>Формирование умения ориентироваться на плоскости</li>
+
                             <li>Знакомство с окружающим миром</li>
+
                             <li>Развитие коммуникативных навыков, эмоциональной сферы, памяти, внимания, творческого
+
                                 мышления
+
                             </li>
+
                         </ul>
+
                         </p>
+
                         <p class="card-text"><small class="text-body-secondary">от 5 лет</small>
+
                         </p>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
         <br>
+
         <div class="card mb-3 mx-3" style="width: 100%;">
+
             <div class="row g-0">
+
                 <div class="col-md-8">
+
                     <div class="card-body">
+
                         <h5 class="card-title">Логопед</h5>
+
                         <p class="card-text">по индивидуальному графику</p>
+
                         <p class="card-text"><u>Диагностика: 800 руб.</u>
-                            <br>
-                            <u>Абонемент на 4 занятия: 2400 руб.</u>
-                            <br>
-                            <u>Абонемент на 8 занятия: 4200 руб.</u></p>
+
                         <p class="card-text">
+
                         <ul>
+
                             <li>Первичная диагностика ребенка – определение проблемы, составление индивидуального плана
+
                                 занятий
+
                             </li>
+
                             <li>Индивидуальные занятия по направлениям: развитие фонематического слуха, коррекция
+
                                 нарушений звукопроизношения, формирование звукового анализа и синтеза, развитие связной
+
                                 речи, развитие мелкой моторики и др.
+
                             </li>
+
                         </ul>
+
                         </p>
+
                         <p class="card-text"><small class="text-body-secondary">от 2 лет</small>
+
                         </p>
+
                     </div>
+
                 </div>
+
                 <div class="col-md-4">
+
                     <img src="static/logoped.jpg" class="img-fluid rounded-end" alt="...">
+
                 </div>
+
             </div>
+
         </div>
+
         <br>
+
         <div class="card mb-3 mx-3" style="width: 100%;">
+
             <div class="row g-0">
+
                 <div class="col-md-4">
+
                     <img src="static/proger.jpg" class="img-fluid rounded-start" alt="...">
+
                 </div>
+
                 <div class="col-md-8">
+
                     <div class="card-body">
+
                         <h5 class="card-title">Программирование</h5>
+
                         <p class="card-text">1 раз в неделю</p>
-                        <p class="card-text"><u>Абонемент: 2700 руб.</u><br><u>Индивидуальное занятие: 1500 руб.</u></p>
+
+                        <p class="card-text"><u>Абонемент: 3800 руб.</u><br><u>Индивидуальное занятие: 1500 руб.</u></p>
+
                         <p class="card-text">
+
                         <ul>
+
                             <li>Освоение базовых навыков работы с компьютером</li>
+
                             <li>Изучение кибербезопасности</li>
+
                             <li>Создание игр с нуля</li>
+
                             <li>Программирование на языке Python</li>
+
                             <li>Графический дизайн</li>
+
                         </ul>
+
                         </p>
+
                         <p class="card-text"><small class="text-body-secondary">от 6 лет</small>
+
                         </p>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
+
 
     <!-- Новости -->
+
     <h1 class="text-center mt-5 mb-2" id="scrollspyHeading6">НОВОСТИ</h1>
 
+
+
     <div class="d-flex justify-content-center flex-wrap">
+
         <p>Прошла летняя IT смена – две недели продуктивных занятий, крутых мастер-классов и интересных мероприятий</p>
+
         <!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
+
         <!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
+
         <!--            <div class="card-body">-->
+
         <!--                <p class="card-text">Содержание новости</p>-->
+
         <!--            </div>-->
+
         <!--        </div>-->
+
         <!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
+
         <!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
+
         <!--            <div class="card-body">-->
+
         <!--                <p class="card-text">Содержание новости</p>-->
+
         <!--            </div>-->
+
         <!--        </div>-->
+
         <!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
+
         <!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
+
         <!--            <div class="card-body">-->
+
         <!--                <p class="card-text">Содержание новости</p>-->
+
         <!--            </div>-->
+
         <!--        </div>-->
+
         <!--        <div class="card mb-3 mx-3" style="width: 540px;">-->
+
         <!--            <img src="static/big_empty_img.png" class="card-img-top" alt="...">-->
+
         <!--            <div class="card-body">-->
+
         <!--                <p class="card-text">Содержание новости</p>-->
+
         <!--            </div>-->
+
         <!--        </div>-->
+
     </div>
+
+
 
     <!-- Отзывы -->
+
     <h1 class="text-center mt-5 mb-2" id="scrollspyHeading7">ОТЗЫВЫ</h1>
 
+
+
     <div class="d-flex justify-content-center flex-wrap">
+
         <!--        <div>-->
+
         <!--            <img src="static/big_empty_img.png" height="75px" width="75px" style="border-radius: 50%;" class="mx-3">-->
+
         <!--        </div>-->
 
+
+
         <div>
+
             <h3>Наталья Егорова</h3>
+
             <!--            <p>5/5-->
+
             <!--                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"-->
+
             <!--                     class="bi bi-star-fill"-->
+
             <!--                     viewBox="0 0 16 16">-->
+
             <!--                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>-->
+
             <!--                </svg>-->
+
             <!--            </p>-->
+
             <p>Этот центр просто находка!!! Столько направлений в образовании, столько грамотных педагогов в одном
+
                 месте...с огромным удовольствием наш сын изучал английский язык. Два раза в неделю, в вечернее время, не
+
                 смотря на усталость после занятий в школе. Знание предмета заметили даже учителя в школе. Предмет тянет
+
                 на отлично. Очень жаль, что по состоянию здоровья пока не можем помещать занятия, но надеюсь, совсем
+
                 скоро вернёмся и продолжим обучение!!!! Спасибо огромное что вы есть!!!</p>
+
         </div>
 
+
+
         <div>
+
             <h3>Людмила Меркулова</h3>
+
             <p>Хочу выразить огромную благодарность педагогам, администрации и всему персоналу KinderBurg за высокий
+
                 профессионализм и чуткое отношение к ученикам! Спасибо за атмосферу и доброжелательность! Очень важно
+
                 видеть довольного ребёнка, который с радостью ходил к Мочаловой Елене Сергеевне! Успехов и процветания
+
                 Вам!</p>
+
         </div>
 
+
+
         <div>
+
             <h3>Оксана Бурляева</h3>
+
             <p>Здравствуйте. Хочу оставить отзыв и благодарность в одном лице о сотрудниках центра KinderBurg, а именно
+
                 Марии Николаевне и Евгении Геннадьевне. Начну с того, что пришли мы в центр не для общего развития или
+
                 галочки, а по рекомендации специалистов. Начали своё посещение, ещё в 2023 году, с группы "ступеньки",
+
                 далее в соответствии с возрастом, продолжаем обучение в группе "Изумрудинки". Наверно, перечислять все
+
                 прилагательные в положительном ключе к этим специалистам нет смысла, потому что я увидела реальный
+
                 результат....Динамика поражает своим масштабом, скачок в развитии и сопутствующих аспектах, так же
+
                 соответствующий! Ребёнок ходит на занятия к данным педагогам с удовольствием, специалисты открыты для
+
                 общения не только с детьми, но и с родителями, что вызывает доверие, ведь обратная связь для родителей,
+
                 так же важна как и для деток. В заключение, хочу сказать спасибо всем сотрудникам центра, продолжайте
+
                 развиваться, расширяться, вы очень полезный "продукт" для общества!</p>
+
         </div>
 
+
+
         <div>
+
             <h3>Анна Тимофеева</h3>
+
             <p>Спасибо большое вам Елена Сергеевна! Я замечаю у Ильюши прогресс не только в знаниях, а и в социализации.
+
                 Благодаря вам он на занятия теперь с удовольствием ходит и даже в садик, и не стесняется участвовать во
+
                 всем, раньше такого не было (и воспитатель это отметила)! До занятий с вами буквы учить не хотел, а
+
                 сейчас ему интересно и уже сам набирает в телефоне некоторые имена игрушек, какие посмотреть хочет и
+
                 буквы, которые изучил пишет везде, слова на них вспоминает и пытается буквы изобразить (как в игре
+
                 крокодил)! А ещё появилась ответственность, что нужно сделать домашнее задание и мне об этом напоминает.
+
                 Я очень довольна, что записала Илью на занятия в центр и именно к вам!</p>
+
         </div>
 
+
+
         <div>
+
             <h3>Катерина Михайлова</h3>
+
             <p>До вас сын прошел один курс по компьютерной грамматике в другой школе подобной, по итогу сделали вывод,
+
                 что заинтересовало и многое получалось. Поэтому, когда получили на соревнованиях по каратэ за 1 место
+
                 сертификат на месяц бесплатного посещения Алгоритмики, не раздумывая стал ходить. Как говорит до сих пор
+
                 "мам, там круто". Прозанимался 3-4 месяца, далее решили сделать перерыв. После неоднократно с нами
+
                 связывались и напоминали о возможных вариантах посещения, но по некоторым причинам, мы отложили до
+
                 осени. И вот пришло сообщение о намечающемся конкурсе от Алгоритмики, главный приз - бесплатное
+
                 посещение 2х недельного интенсива с различными мастер-классами и обучающими занятиями. Мы стали
+
                 участниками и выиграли первое место. Счастью не было предела) Всё 2 недели сын с готовностью и
+
                 удовольствием ездил в другой конец города и при этом всегда говорил "мам, там круто" и ещё "с нашим
+
                 преподавателем мы друзья".
+
                 Спасибо огромное организаторам, преподавателям за действительно крутую возможность получить знания и
+
                 навыки в компьютерном мире, тем более у ребёнка это неплохо получается, мы все это видим и думаем, что
+
                 будущая профессия возможно будет связана именно с данным направлением.
+
                 Также хочу отметить, что руководители очень приветливые люди. Всегда идут на уступки, активно общаются,
+
                 ну в общем большие молодцы своего дела!!! Желаем и дальше процветать, расширяться и конечно же больше
+
                 новых и постоянных учеников
+
             </p>
+
         </div>
 
+
+
         <div>
+
             <h3>Геннадий Молев</h3>
+
             <p>Выбирал школу раннего развития по месторасположению и отзывам. Остановил свой выбор на "Киндербурге" и не
+
                 пожалел. У моих детей отличный педагог Мария Николаевна Кузнецова. Мальчики ходят с огромным
+
                 удовольствием на занятия в этот центр. Слушают внимательно преподавателя на занятиях, хотя они очень
+
                 активные по жизни. В центре помимо обычных занятий бывают и другие активные развлечения. Меньше, чем за
+
                 год нашего пребывания в центре, мы побывали на таких активностях, как "Пенная вечеринка" и "Фестиваль
+
                 бега". Для родителей был организован мастер-класс по оказанию первой помощи, что очень немаловажно. И
+
                 все эти мероприятия были бесплатными. Большая благодарность руководителю центра Евгению Киму за то, что
+
                 принимает активное участие в организации разных мероприятий, помимо своей сложной, для всех очень
+
                 нужной, основной профессии!</p>
+
         </div>
 
+
+
         <div>
+
             <h3>Наталья Логинова</h3>
+
             <p>Дочь изучала программирование в течение двух лет. Изучали язык программирования Питон. Занятия серьёзные,
+
                 дающие много знаний по предмету. Преподаватель Андрей Шустров умеет заинтересовать ребят и найти
+
                 индивидуальный подход к ученикам. По окончании курса выдаётся сертификат. В центре уютно и чисто.
+
                 Впечатления только положительные.</p>
+
         </div>
+
     </div>
+
+
+
 
 
     <!-- Контакты -->
+
     <h1 class="text-center mt-5 mb-2" id="scrollspyHeading8">КОНТАКТЫ</h1>
 
+
+
     <div class="container text-center">
+
         <p>Наш адрес: г. Великий Новгород, ул. Щусева 7А</p>
+
         <p>Телефон: +7-921-200-12-00<br>+7-960-200-40-77</p>
+
         <p>Соцсети: <a href="https://vk.com/kinder__burg">ВКонтакте</a></p>
+
     </div>
+
+
+
 
 
     <!-- Сведения -->
 
+
+
     <!-- Основные сведения -->
+
     <h1 class="text-center mt-5 mb-2">СВЕДЕНИЯ</h1>
+
+
+
 
 
     <h2 class="text-center mt-5 mb-2" id="info">ОСНОВНЫЕ СВЕДЕНИЯ</h2>
 
+
+
     <div class="container">
+
         <p><b>Полное наименование организации:</b> Центр развития интеллекта KinderBurg</p>
+
         <p><b>Краткое наименование организации:</b> ЦДО KinderBurg</p>
+
         <p><b>Дата создания организации:</b></p>
-        <p><b>Почтовый и юридический адрес МДОУ детский сад № 14:</b> 173008, Новгородская область, г. Великий Новгород,
-            ул. Щусева д. 7А</p>
-        <p><b>Информация об учредителя:</b> Учредителем ЦДО KinderBurg является ИП Ким Евгений Васильевич, действующий
-            на основании регистрации физического лица в качестве индивидуального предпринимателя ОГРНИП 321532100019631
-            от 18 августа 2021 г., ИНН 532120531391</p>
-        <p><b>Адрес:</b> 173021, обл. Новгородская, г. Великий Новгород, ул. Ломоносова, д. 37, кв. 101</p>
-        <p><b>Электронная почта:</b> kinderburg.vn@yandex.ru</p>
+
+        <p><b>Почтовый и юридический адрес:</b>173008, Россия, Новгородская область, г. Великий Новгород, ул. Щусева д.
+
+            7, к. 6</p>
+
+        <p><b>Информация об учредителя:</b>Учредителем ЦДО KinderBurg является ИП Дробышева Екатерина Сергеевна,
+
+            действующая на основании регистрации физического лица в качестве индивидуального предпринимателя ОГРНИП
+
+            324530000030960 от 19 декабря 2024 г., ИНН 532113838640</p>
+
+        <p><b>Адрес:</b>173025, обл. Новгородская, г. Великий Новгород, ул. Коровникова, д. 13, к. 3, кВ. 229</p>
+
+        <p><b>Электронная почта:</b>kinderburgvn@gmail.com</p>
+
         <p><b>Режим работы:</b></p>
+
         <ul>
+
             <li>Шестидневная рабочая неделя;</li>
+
             <li>Выходные дни - воскресенье, праздничные дни;</li>
-            <li>График работы: с 10:00 до 21:00;</li>
+
+            <li>График работы: с 10:00 до 20:00;</li>
+
         </ul>
+
         <p><b>Контактный телефон:</b> +7-921-200-12-00</p>
-        <p><b>Адрес страницы в сети Интернет:</b> https://vk.com/kinder__burg</p>
-        <p><b>Филиалов и структурных подразделений нет.</b></p>
-        <p>ЦДО KinderBurg представляет собой кирпичное двухэтажное здание, рассчитанное на 4 группы обучающихся по
-            направлениям: раннее развитие, базовый интеллектуальный курс, подготовка к школе, программирование,
-            логопедическая работа.
-            Две группы, расположенные на первом этаже имеют необходимое оборудование, на первом этаже расположен
-            гардероб, две туалетные комнаты: детская и взрослая. Группы, расположенные на втором этаже имеют зонирование
-            с игровой комнатой для отдыха, логопедический кабинет представляет собой отдельное помещение для
-            индивидуальных занятий.
-            В здании ЦДО имеются: кабинет логопеда-дефектолога, музыкальный зал, 4 учебных кабинета, гардероб, 2
-            туалетные комнаты, кабинет изобразительного искусства, 2 подсобных помещения.
+
+        <p><b>Адрес страницы в сети Интернет:</b><a href="https://vk.com/kinder__burg">https://vk.com/kinder__burg</a>
+
         </p>
+
+        <p><b>Филиалов и структурных подразделений нет.</b></p>
+
+        <p>ЦДО KinderBurg представляет собой кирпичное двухэтажное здание, рассчитанное на 4 группы обучающихся по
+
+            направлениям: раннее развитие, базовый интеллектуальный курс, подготовка к школе, программирование,
+
+            логопедическая работа. Две группы, расположенные на первом этаже имеют необходимое оборудование, на первом
+
+            этаже расположен гардероб, две туалетные комнаты: детская и взрослая. Группы, расположенные на втором этаже
+
+            имеют зонирование с игровой комнатой для отдыха, логопедический кабинет представляет собой отдельное
+
+            помещение для индивидуальных занятий. В здании ЦДО имеются: кабинет логопеда-дефектолога, музыкальный зал, 4
+
+            учебных кабинета, гардероб, 2 туалетные комнаты, кабинет изобразительного искусства, 2 подсобных помещения.
+
+        </p>
+
         <p><b>Обучение осуществляется на государственном языке Российской Федерации - русском языке.</b></p>
+
     </div>
+
+
+
 
 
     <h2 class="text-center mt-5 mb-2" id="sno">СТРУКТУРА И ОРГАНЫ УПРАВЛЕНИЯ ОБРАЗОВАТЕЛЬНОЙ ОРГАНИЗАЦИЕЙ</h2>
 
+
+
     <div>
+
         <p><b>Министерство образования Новгородской области</b></p>
+
         <p>173001, Великий Новгород, ул.Новолучанская, д.27.</p>
+
         <p>Сайт: минобр.тверскаяобласть.рф</p>
+
         <p>В социальной сети "ВКонтакте": https://vk.com/minobr53</p>
+
         <p>Управление Учреждением осуществляется в соответствии с законодательством Российской Федерации и Уставом.
+
             Учредителем и собственником имущества Учреждения является руководитель – ИП Ким Евгений Васильевич, который
+
             осуществляет текущее руководство деятельностью образовательной организации.</p>
+
     </div>
+
+
+
 
 
     <h2 class="text-center mt-5 mb-2" id="scrollspyHeadingDocs">ДОКУМЕНТЫ</h2>
 
+
+
     <div>
-        <a href="static/file1.pdf">Выписка_из_реестра_лицензий_L035_01280_53_00617169_1.pdf</a><br>
-        <a href="static/file2.pdf">ДОГОВОР_присоединения_на_оказание_услуг_Программирование,_11_09.pdf</a><br>
-        <a href="static/file3.pdf">ДОГОВОР_присоединения_на_оказание_услуг_Экспресс_курс,_5_7_лет,.pdf</a><br>
-        <a href="static/file4.pdf">ДОГОВОР_присоединения_на_оказание_услуг_1_2_года,_11_09_23.pdf</a><br>
-        <a href="static/file5.pdf">ДОГОВОР_присоединения_на_оказание_услуг_3_4_года_и_5_7_лет,_11_09.pdf</a><br>
-        <a href="static/file6.pdf">Порядок_приема,_отчисления_и_восстановления_учащегося.pdf</a><br>
+
+        <a href="static/file1.pdf">ДОГОВОР присоединения на оказание услуг_ 3-4 года и 5-7 лет, 25.12.2024 г..pdf</a><br>
+
+        <a href="static/file2.pdf">ДОГОВОР присоединения на оказание услуг_1-2 года, 25.12.2024 г..pdf</a><br>
+
+        <a href="static/file3.pdf">Порядок приема, отчисления обучающихся.pdf</a><br>
+
+        <a href="static/file4.pdf">Дополнительная образовательная общеразвивающая программа_Базовый интеллектуальный курс.pdf</a><br>
+
+        <a href="static/file5.pdf">Дополнительная образовательная общеразвивающая программа_Подготовка к школе.pdf</a><br>
+
+        <a href="static/file6.pdf">Дополнительная образовательная общеразвивающая программа_Основы программирования на языке Python .pdf</a><br>
+
+
+
+
+
     </div>
+
+
+
 
 
     <h2 class="text-center mt-5 mb-2" id="teach">ОБРАЗОВАНИЕ</h2>
 
+
+
     <div class="mb-5">
+
         <p>Обучение по программам дополнительного образования. Уровень образования – дошкольное, форма – очная,
+
             нормативный
+
             срок обучения – 2 года по каждой программе, язык обучения – русский.</p>
 
+
+
         <p>Обучение организуется в соответствии с утвержденными образовательными стандартами: </p>
+
         <a href="static/file7.pdf">Федеральный_закон_Российской_Федерации_от_29_декабря_2012_г_N_273.pdf</a><br>
+
         <a href="static/file8.pdf">Приказ_от_17_10_2013_№_1155_Об_утверждении_федерального_государственного.pdf</a><br>
+
     </div>
 
 
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+
             crossorigin="anonymous"></script>
+
 </div>
+
 </body>
+
 </html>
